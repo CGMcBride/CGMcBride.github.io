@@ -1,0 +1,12 @@
+.name {
+	display: flex;
+	align-items: flex-start;
+}
+.replyto {
+	display: flex;
+	align-items: flex-start;
+}
+.send {
+	display: flex;
+	align-items: flex-start;
+}
