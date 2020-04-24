@@ -10,6 +10,7 @@
 			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 			crossorigin="anonymous"
 		/>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<!-- nav bar starts here -->
@@ -46,19 +47,38 @@
 		<!-- I need some help, can you show me what i need to do to get the
         message box on the same row as the name and email? -->
 		<form action="https://formspree.io/FORM_ID" method="POST">
-			<label>
-				Your Name:
-				<input type="text" name="name" />
-			</label>
-			<label>
-				Your Email:
-				<input type="email" name="_replyto" />
-			</label>
-			<label>
-				Message:
-				<textarea name="message"></textarea>
-			</label>
-			<input type="submit" value="Send" />
+			<div class="form-group">
+				<label for="exampleFormControlInput1">Your Name:</label>
+				<input
+					type="text"
+					name="name"
+					class="form-control"
+					id="exampleFormControlInput1"
+					placeholder="Type your name here"
+				/>
+			</div>
+
+			<div class="form-group">
+				<label for="exampleFormControlInput2">Your Email:</label>
+				<input
+					type="email"
+					name="email"
+					class="form-control"
+					id="exampleFormControlInput2"
+					placeholder="Type your email here"
+				/>
+			</div>
+
+			<div class="form-group">
+				<label for="exampleFormControlTextarea1">Your Message: </label>
+				<textarea
+					class="form-control"
+					id="exampleFormControlTextarea1"
+					name="message"
+					rows="2"
+				></textarea>
+				<input type="submit" value="Send" />
+			</div>
 		</form>
 		<script
 			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

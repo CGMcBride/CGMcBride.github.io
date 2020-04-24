@@ -10,6 +10,22 @@
 	display: flex;
 	align-items: flex-start;
 }
-.images-Portifolio picture {
-	width: 300px;
+.imgFluid {
+	width: 200px;
+}
+
+.t1 {
+	color: red;
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		background-color: red;
+	}
+	.t1 {
+		color: blue;
+	}
+	.imgFluid {
+		width: 100px;
+	}
 }
