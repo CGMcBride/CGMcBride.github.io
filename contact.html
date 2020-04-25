@@ -33,53 +33,62 @@
 						<a class="nav-link" href="index.html">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact</a>
+						<a class="nav-link" href="portfolio.html">Portifolio</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="portfolio.html">Portifolio</a>
+						<a class="nav-link" href="contact.html">Contact</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 		<!-- nav bar ends here -->
+		<!-- main body info -->
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<div class="col-12">
+					<form action="https://formspree.io/FORM_ID" method="POST">
+						<div class="form-group">
+							<label for="exampleFormControlInput1">Your Name:</label>
+							<input
+								type="text"
+								name="name"
+								class="form-control"
+								id="exampleFormControlInput1"
+								placeholder="Type your name here"
+							/>
+						</div>
 
-		<!-- start the form here for contact info, put in a nav or div -->
-		<!-- I need some help, can you show me what i need to do to get the
-        message box on the same row as the name and email? -->
-		<form action="https://formspree.io/FORM_ID" method="POST">
-			<div class="form-group">
-				<label for="exampleFormControlInput1">Your Name:</label>
-				<input
-					type="text"
-					name="name"
-					class="form-control"
-					id="exampleFormControlInput1"
-					placeholder="Type your name here"
-				/>
-			</div>
+						<div class="form-group">
+							<label for="exampleFormControlInput2">Your Email:</label>
+							<input
+								type="email"
+								name="email"
+								class="form-control"
+								id="exampleFormControlInput2"
+								placeholder="Type your email here"
+							/>
+						</div>
 
-			<div class="form-group">
-				<label for="exampleFormControlInput2">Your Email:</label>
-				<input
-					type="email"
-					name="email"
-					class="form-control"
-					id="exampleFormControlInput2"
-					placeholder="Type your email here"
-				/>
+						<div class="form-group">
+							<label for="exampleFormControlTextarea1">Your Message: </label>
+							<textarea
+								class="form-control"
+								id="exampleFormControlTextarea1"
+								name="message"
+								rows="2"
+							></textarea>
+						</div>
+						<input class="btn btn-danger mt-3" type="submit" value="Send" />
+					</form>
+				</div>
 			</div>
+		</div>
+		<footer>
+			<div>
+				<p class="text-center">2020 &copy; Conner McBride</p>
+			</div>
+		</footer>
 
-			<div class="form-group">
-				<label for="exampleFormControlTextarea1">Your Message: </label>
-				<textarea
-					class="form-control"
-					id="exampleFormControlTextarea1"
-					name="message"
-					rows="2"
-				></textarea>
-				<input type="submit" value="Send" />
-			</div>
-		</form>
 		<script
 			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
