@@ -1,33 +1,8 @@
-/* .name {
-	display: flex;
-	align-items: flex-start;
+.style {
+	/* height: 470px;
+	background-color:; */
 }
-.replyto {
-	display: flex;
-	align-items: flex-start;
+body {
 }
-.send {
-	display: flex;
-	align-items: flex-start;
-}
-.imgFluid {
-	width: 200px;
-}
-
-.t1 {
-	color: red;
-}
-
-@media only screen and (max-width: 600px) {
-	body {
-		background-color: red;
-	}
-	.t1 {
-		color: blue;
-	}
-	.imgFluid {
-		width: 100px;
-	}
-} */
 /* for the code a listed above I wanted to run some of my own testing with just to see what would work, I decided to just comment it out as of now
 it doesn't hold any value to helping the code overall its more of a way to break it at this point. However I justed decided to comment it out. */
