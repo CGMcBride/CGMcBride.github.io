@@ -1,271 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Portifolio</title>
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<!-- nav bar starts here -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-info">
-			<a class="navbar-brand" href="index.html">Conner McBride</a>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarNav"
-				aria-controls="navbarNav"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="portfolio.html">Portifolio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<!-- nav bar ends here -->
 
-		<!--Portfolio info: The idea of this was to demostrate "contanier rows and column" going from going from a full screen desktop even down to a smaller screen device
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Portifolio</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+	<link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+	<!-- nav bar starts here -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-info">
+		<a class="navbar-brand" href="index.html">Conner McBride</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="portfolio.html">Portifolio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- nav bar ends here -->
+
+	<!--Portfolio info: The idea of this was to demostrate "contanier rows and column" going from going from a full screen desktop even down to a smaller screen device
 		such as a smart phone. As the window of the broswer changes you notice the size of the columns shrinking going from 4 across down to one depnding on how you move 
 	your browser window. Also why so many just to think I wanted to future proof this to proivde mulitiple links to different projects I will do and accomplish.
 I put in a button to my first assignment to show case this in my GitHub. Also getting the pictures to be the same size wasn't very easy, I ended up
 google(ing) how to set each picture size a reasonable length for the cards you will notice the margin bottom to help me fill in the extra space
 when I first set my picture. -->
-		<div class="container">
-			<div class="row p-3">
-				<!-- Project 1 -->
-				<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
-					<div class="card" style="width: 100%;">
-						<img
-							src="assets/images/portfolio/Project 1 image.jpg"
-							class="card-img-top"
-							alt="My name"
-						/>
-						<div class="card-body">
-							<h5 class="card-title">Portifolio</h5>
-							<p class="card-text">
-								Some quick example text to build on the card title and make up
-								the bulk of the card's content.
-							</p>
-							<a href="#" target="_blank" class="btn btn-danger">GitHub</a>
-							<a
-								href="https://CGMcBride.github.io"
-								target="_blank"
-								class="btn btn-info"
-								>Website</a
-							>
-						</div>
+	<div class="container">
+		<div class="row p-3" id="cardDiv">
+			<!-- Project 1 -->
+			<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+				<div class="card style" style="width: 100%;">
+					<img src="assets/images/portfolio/Project 1 image.jpg" class="card-img-top" alt="My name"
+						height="235px" />
+					<div class="card-body">
+						<h5 class="card-title">Portifolio</h5>
+						<p class="card-text">
+							This is the creation of my first portfolio and reposiorty link
+						</p>
+						<a href="https://github.com/CGMcBride/CGMcBride.github.io" target="_blank"
+							class="btn btn-danger">GitHub</a>
+						<a href="https://CGMcBride.github.io" target="_blank" class="btn btn-info">Website</a>
 					</div>
 				</div>
-				<!-- Project 2 -->
-				<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
-					<div class="card" style="width: 100%;">
-						<img
-							src="assets/images/portfolio/Project 2 image.jpg"
-							class="card-img-top"
-							alt="..."
-						/>
-						<div class="card-body">
-							<h5 class="card-title">Password Generator</h5>
-							<p class="card-text">
-								This is a random password generator, if you need a password
-								click here.
-							</p>
-							<a href="#" target="_blank" class="btn btn-danger">GitHub</a>
-							<a
-								href="https://cgmcbride.github.io/Password_Generator/"
-								target="_blank"
-								class="btn btn-info"
-								>Website</a
-							>
-						</div>
+			</div>
+			<!-- Project 2 -->
+			<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+				<div class="card style" style="width: 100%;">
+					<img src="assets/images/portfolio/Project 2 image.jpg" class="card-img-top" alt="..."
+						height="235px" />
+					<div class="card-body">
+						<h5 class="card-title">Password Generator</h5>
+						<p class="card-text">
+							This is a random password generator, if you need a password
+							click here.
+						</p>
+						<a href="https://github.com/CGMcBride/Password_Generator" target="_blank"
+							class="btn btn-danger">GitHub</a>
+						<a href="https://cgmcbride.github.io/Password_Generator/" target="_blank"
+							class="btn btn-info">Website</a>
 					</div>
 				</div>
-				<!-- Project 3 -->
-				<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
-					<div class="card" style="width: 100%;">
-						<img
-							src="assets/images/portfolio/Project 1 image.jpg"
-							class="card-img-top"
-							alt="..."
-						/>
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">
-								Some quick example text to build on the card title and make up
-								the bulk of the card's content.
-							</p>
-							<a href="#" target="_blank" class="btn btn-danger">GitHub</a>
-							<a
-								href="https://CGMcBride.github.io"
-								target="_blank"
-								class="btn btn-info"
-								>Website</a
-							>
-						</div>
+			</div>
+			<!-- Project 3 -->
+			<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+				<div class="card style" style="width: 100%;">
+					<img src="assets/images/portfolio/Project 1 image.jpg" class="card-img-top" alt="..." />
+					<div class="card-body">
+						<h5 class="card-title">Day Scheduler</h5>
+						<p class="card-text">
+							This a is designed to show my work day scheduler, I am using Jquery instead of
+							normal JavaScript. You will notice that what would normaly take 5-6 lines of code can be
+							done in 2-3 lines.
+						</p>
+						<a href="https://github.com/CGMcBride/Conner-s-Work-Day-Scheduler" target="_blank"
+							class="btn btn-danger">GitHub</a>
+						<a href="https://cgmcbride.github.io/Conner-s-Work-Day-Scheduler/" target="_blank"
+							class="btn btn-info">Website</a>
 					</div>
 				</div>
-				<!-- Project 4 -->
-				<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
-					<div class="card" style="width: 100%;">
-						<img
-							src="assets/images/portfolio/Project 1 image.jpg"
-							class="card-img-top"
-							alt="..."
-						/>
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">
-								Some quick example text to build on the card title and make up
-								the bulk of the card's content.
-							</p>
-							<a href="#" target="_blank" class="btn btn-danger">GitHub</a>
-							<a
-								href="https://CGMcBride.github.io"
-								target="_blank"
-								class="btn btn-info"
-								>Website</a
-							>
-						</div>
+			</div>
+			<!-- Project 4 -->
+			<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+				<div class="card style" style="width: 100%;">
+					<img src="assets/images/portfolio/Project 1 image.jpg" class="card-img-top" alt="..." />
+					<div class="card-body">
+						<h5 class="card-title">Weather Dashboard</h5>
+						<p class="card-text">
+							This weather dash board is to show multiple cities weather, you can also add the city of
+							your choice such as "New York" for example if you would like to know the tempature there.
+
+						</p>
+						<a href="https://github.com/CGMcBride/Weather-Dashboard-" target="_blank"
+							class="btn btn-danger">GitHub</a>
+						<a href="https://cgmcbride.github.io/Weather-Dashboard-/" target="_blank"
+							class="btn btn-info">Website</a>
 					</div>
 				</div>
-				<!-- Project 5 -->
-				<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
-					<div class="card" style="width: 100%;">
-						<img
-							src="assets/images/portfolio/Project 1 image.jpg"
-							class="card-img-top"
-							alt="..."
-						/>
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">
-								Some quick example text to build on the card title and make up
-								the bulk of the card's content.
-							</p>
-							<a href="#" target="_blank" class="btn btn-danger">GitHub</a>
-							<a
-								href="https://CGMcBride.github.io"
-								target="_blank"
-								class="btn btn-info"
-								>Website</a
-							>
-						</div>
+			</div>
+			<!-- Project 5 -->
+			<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+				<div class="card style" style="width: 100%;">
+					<img src="assets/images/portfolio/Project 1 image.jpg" class="card-img-top" alt="..." />
+					<div class="card-body">
+						<h5 class="card-title">Code Quiz</h5>
+						<p class="card-text">
+							Play fun game and see how fast you can answer the questions correctly!
+						</p>
+						<a href="https://github.com/CGMcBride/CodeQuiz" target="_blank"
+							class="btn btn-danger">GitHub</a>
+						<a href="https://cgmcbride.github.io/CodeQuiz/" target="_blank" class="btn btn-info">Website</a>
 					</div>
 				</div>
-				<!-- Project 6 -->
-				<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
-					<div class="card" style="width: 100%;">
-						<img
-							src="assets/images/portfolio/Project 1 image.jpg"
-							class="card-img-top"
-							alt="..."
-						/>
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">
-								Some quick example text to build on the card title and make up
-								the bulk of the card's content.
-							</p>
-							<a href="#" target="_blank" class="btn btn-danger">GitHub</a>
-							<a
-								href="https://CGMcBride.github.io"
-								target="_blank"
-								class="btn btn-info"
-								>Website</a
-							>
-						</div>
+			</div>
+			<!-- Project 6 -->
+			<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+				<div class="card style" style="width: 100%;">
+					<img src="assets/images/portfolio/Project 1 image.jpg" class="card-img-top" alt="..." />
+					<div class="card-body">
+						<h5 class="card-title">National Park App</h5>
+						<p class="card-text">
+							My first team app created for adventures!
+						</p>
+						<a href="https://github.com/PerfectPark1/PerfectPark" target="_blank"
+							class="btn btn-danger">GitHub</a>
+						<a href="https://perfectpark1.github.io/PerfectPark/" target="_blank"
+							class="btn btn-info">Website</a>
 					</div>
 				</div>
-				<!-- Project 7 -->
-				<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
-					<div class="card" style="width: 100%;">
-						<img
-							src="assets/images/portfolio/Project 1 image.jpg"
-							class="card-img-top"
-							alt="..."
-						/>
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">
-								Some quick example text to build on the card title and make up
-								the bulk of the card's content.
-							</p>
-							<a href="#" target="_blank" class="btn btn-danger">GitHub</a>
-							<a
-								href="https://CGMcBride.github.io"
-								target="_blank"
-								class="btn btn-info"
-								>Website</a
-							>
-						</div>
+			</div>
+			<!-- Project 7 -->
+			<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+				<div class="card style" style="width: 100%;">
+					<img src="assets/images/portfolio/Project 1 image.jpg" class="card-img-top" alt="..." />
+					<div class="card-body">
+						<h5 class="card-title">My Perfect Park</h5>
+						<p class="card-text">
+							Some quick example text to build on the card title and make up
+							the bulk of the card's content.
+						</p>
+						<a href="#" target="_blank" class="btn btn-danger">GitHub</a>
+						<a href="https://CGMcBride.github.io" target="_blank" class="btn btn-info">Website</a>
 					</div>
 				</div>
-				<!-- Project 8 -->
-				<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
-					<div class="card" style="width: 100%;">
-						<img
-							src="assets/images/portfolio/Project 1 image.jpg"
-							class="card-img-top"
-							alt="..."
-						/>
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">
-								Some quick example text to build on the card title and make up
-								the bulk of the card's content.
-							</p>
-							<a href="#" target="_blank" class="btn btn-danger">GitHub</a>
-							<a
-								href="https://CGMcBride.github.io"
-								target="_blank"
-								class="btn btn-info"
-								>Website</a
-							>
-						</div>
+			</div>
+			<!-- Project 8 -->
+			<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+				<div class="card style" style="width: 100%;">
+					<img src="assets/images/portfolio/Project 1 image.jpg" class="card-img-top" alt="..." />
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							Some quick example text to build on the card title and make up
+							the bulk of the card's content.
+						</p>
+						<a href="#" target="_blank" class="btn btn-danger">GitHub</a>
+						<a href="https://CGMcBride.github.io" target="_blank" class="btn btn-info">Website</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- Again this is my work, get your own hahahah -->
-		<footer>
-			<div>
-				<p class="text-center">2020 &copy; Conner McBride</p>
-			</div>
-		</footer>
+	</div>
+	<!-- Again this is my work, get your own hahahah -->
+	<footer>
+		<div>
+			<p class="text-center">2020 &copy; Conner McBride</p>
+		</div>
+	</footer>
 
-		<script
-			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-			crossorigin="anonymous"
-		></script>
-	</body>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+	<script src="script.js"> </script>
+</body>
+
 </html>
