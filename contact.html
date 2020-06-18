@@ -14,6 +14,12 @@ the header I realized the nav link need to switch places so i changed the Portif
 </head>
 
 <body>
+	<div id="particles-js"></div><!-- stats - count particles -->
+	<!-- <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> -->
+	<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+	<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+
 	<!-- nav bar starts here -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-info">
 		<a class="navbar-brand" href="index.html">Conner McBride</a>
@@ -36,11 +42,6 @@ the header I realized the nav link need to switch places so i changed the Portif
 		</div>
 	</nav>
 	<!-- nav bar ends here -->
-	<div id="particles-js"></div><!-- stats - count particles -->
-	<!-- <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> -->
-	<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
-	<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
 	<!-- main body info : the contact info was used to present an opportuinty to showcase a container using the full 12 columns.
 		I wanted to put in rows for the area, one to exapnd the orginal message box and to show the mt-3 which is the margin at least to show the start of it  -->
 	<div class="jumbotron jumbotron-fluid">
@@ -48,31 +49,36 @@ the header I realized the nav link need to switch places so i changed the Portif
 			<div class="col-12">
 				<form action="https://formspree.io/FORM_ID" method="POST">
 					<div class="form-group">
-						<label for="exampleFormControlInput1">Your Name:</label>
+						<label class="text-light" for="exampleFormControlInput1">Your Name:</label>
 						<input type="text" name="name" class="form-control" id="exampleFormControlInput1"
 							placeholder="Type your name here" />
 					</div>
 
 					<div class="form-group">
-						<label for="exampleFormControlInput2">Your Email:</label>
+						<label class="text-light" for="exampleFormControlInput2">Your Email:</label>
 						<input type="email" name="email" class="form-control" id="exampleFormControlInput2"
 							placeholder="Type your email here" />
 					</div>
 
 					<div class="form-group">
-						<label for="exampleFormControlTextarea1">Your Message: </label>
+						<label class="text-light" for="exampleFormControlTextarea1">Your Message: </label>
 						<textarea class="form-control" id="exampleFormControlTextarea1" name="message"
 							rows="2"></textarea>
 					</div>
 					<input class="btn btn-danger mt-3" type="submit" value="Send" />
 				</form>
 			</div>
+
 		</div>
 	</div>
 	<!-- added the copy right because its my work! -->
-	<footer>
+	<footer class="p-3 bg-dark fixed-bottom">
 		<div>
-			<p class="text-center">2020 &copy; Conner McBride</p>
+			<h6 class="immediateContact text-light text-center"><strong>Immediate Contact Info:
+				</strong><span>Call:</span> <a href="tel:+15127848589">
+					512-784-8589
+				</a> <span>Email:</span> <a href="mailto:connermcbride@ymail.com">connermcbride@ymail.com</a></h6>
+			<p class="text-center text-light">2020 &copy; Conner McBride</p>
 		</div>
 	</footer>
 

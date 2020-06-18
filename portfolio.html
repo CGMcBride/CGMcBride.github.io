@@ -11,6 +11,11 @@
 </head>
 
 <body>
+	<div id="particles-js"></div><!-- stats - count particles -->
+	<!-- <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> -->
+	<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+	<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
 	<!-- nav bar starts here -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-info">
 		<a class="navbar-brand" href="index.html">Conner McBride</a>
@@ -33,11 +38,22 @@
 		</div>
 	</nav>
 	<!-- nav bar ends here -->
-	<div id="particles-js"></div><!-- stats - count particles -->
-	<!-- <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> -->
-	<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
-	<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+	<div class="jumbotron">
+		<!-- jumbotron jumbotron-fluid -->
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h1 class="display-4 text-light" id="text">My Showcase</h1>
+					<p class="lead text-light" id="lead">
+						Welcome to <i>my projects</i> where you can view and explore my created webpages and apps along
+						with my GitHub.
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
 	<!--Portfolio info: The idea of this was to demostrate "contanier rows and column" going from going from a full screen desktop even down to a smaller screen device
 		such as a smart phone. As the window of the broswer changes you notice the size of the columns shrinking going from 4 across down to one depnding on how you move 
 	your browser window. Also why so many just to think I wanted to future proof this to proivde mulitiple links to different projects I will do and accomplish.
@@ -64,8 +80,7 @@ when I first set my picture. -->
 			<!-- Project 2 -->
 			<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
 				<div class="card style" style="width: 100%;">
-					<img src="assets/images/portfolio/Project 2 image.jpg" class="card-img-top" alt="..."
-						height="235px" />
+					<img src="assets/images/portfolio/password.jpg" class="card-img-top" alt="..." height="235px" />
 					<div class="card-body">
 						<h5 class="card-title">Password Generator</h5>
 						<p class="card-text">
@@ -82,7 +97,7 @@ when I first set my picture. -->
 			<!-- Project 3 -->
 			<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
 				<div class="card style" style="width: 100%;">
-					<img src="assets/images/portfolio/WorkDayPlanner.jpg" class="card-img-top" alt="..." />
+					<img src="assets/images/portfolio/calendardate.png" class="card-img-top" alt="..." />
 					<div class="card-body">
 						<h5 class="card-title">Day Scheduler</h5>
 						<p class="card-text">
@@ -100,7 +115,7 @@ when I first set my picture. -->
 			<!-- Project 4 -->
 			<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
 				<div class="card style" style="width: 100%;">
-					<img src="assets/images/portfolio/WeatherDashBoard.jpg" class="card-img-top" alt="..." />
+					<img src="assets/images/portfolio/Weather.jpg" class="card-img-top" alt="..." />
 					<div class="card-body">
 						<h5 class="card-title">Weather Dashboard</h5>
 						<p class="card-text">
@@ -118,7 +133,7 @@ when I first set my picture. -->
 			<!-- Project 5 -->
 			<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
 				<div class="card style" style="width: 100%;">
-					<img src="assets/images/portfolio/CodeQuiz.jpg" class="card-img-top" alt="..." />
+					<img src="assets/images/portfolio/Codeimage.jpg" class="card-img-top" alt="..." />
 					<div class="card-body">
 						<h5 class="card-title">Code Quiz</h5>
 						<p class="card-text">
@@ -133,7 +148,7 @@ when I first set my picture. -->
 			<!-- Project 6 -->
 			<div class="col-sm-6 col-md-4 col-lg-3 mb-5">
 				<div class="card style" style="width: 100%;">
-					<img src="assets/images/portfolio/NationalPark.jpg" class="card-img-top" alt="..." />
+					<img src="assets/images/portfolio/fishing11.jpg" class="card-img-top" alt="..." />
 					<div class="card-body">
 						<h5 class="card-title">National Park App</h5>
 						<p class="card-text">
@@ -178,10 +193,19 @@ when I first set my picture. -->
 			</div>
 		</div>
 	</div>
+	<div class="container pb-5 mb-5">
+		<div class="row">
+			<div class="col-12">&nbsp;&#160;</div>
+		</div>
+	</div>
 	<!-- Again this is my work, get your own hahahah -->
-	<footer>
+	<footer class="p-3 bg-dark fixed-bottom">
 		<div>
-			<p class="text-center">2020 &copy; Conner McBride</p>
+			<h6 class="immediateContact text-light text-center"><strong>Immediate Contact Info:
+				</strong><span>Call:</span> <a href="tel:+15127848589">
+					512-784-8589
+				</a> <span>Email:</span> <a href="mailto:connermcbride@ymail.com">connermcbride@ymail.com</a></h6>
+			<p class="text-center text-light">2020 &copy; Conner McBride</p>
 		</div>
 	</footer>
 

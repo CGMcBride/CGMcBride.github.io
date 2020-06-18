@@ -16,6 +16,11 @@ I got to ply with how to set my font in a column and used (i) for italics i was 
 </head>
 
 <body>
+	<div id="particles-js"></div><!-- stats - count particles -->
+	<!-- <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> -->
+	<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+	<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
 	<!-- nav bar starts here -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-info">
 		<a class="navbar-brand" href="index.html">Conner McBride</a>
@@ -38,47 +43,58 @@ I got to ply with how to set my font in a column and used (i) for italics i was 
 		</div>
 	</nav>
 	<!-- nav bar ends here -->
-	<div id="particles-js"></div><!-- stats - count particles -->
-	<!-- <div class="count-particles"> <span class="js-count-particles">--</span> particles </div> -->
-	<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
-	<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+
 
 	<!-- main body info -->
-	<div class="jumbotron jumbotron-fluid">
+	<div class="jumbotron">
 		<!-- jumbotron jumbotron-fluid -->
-
 		<div class="container">
 			<div class="row">
-				<div id="mypicture" class="col-sm-12 col-md-4">
-					<img src="assets/images/Portifolio picture.jpg" alt="Conner McBride" width="100%" />
-				</div>
-				<div class="col-sm-12 col-md-8">
-					<h1 class="display-4" id="text">Conner McBride</h1>
-					<p class="lead" id="lead">
+				<div class="col-12">
+					<h1 class="display-4 text-light" id="text">Conner McBride</h1>
+					<p class="lead text-light" id="lead">
 						Welcome to <i>my portfolio</i> where you can learn a few things
-						about me and explore a few of my created pages and view my resume.
-						<iframe src="assets\images\portfolio\ConnerMcBride_Resume.pdf" width="100%"
-							height="500px"></iframe>
+						about me, explore a few of my created pages and view my resume.
 					</p>
+				</div>
+			</div>
+		</div>
 
-					<div class="socialIcons">
-						<a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
-							target="_blank" rel="noopener noreferrer">
-							<i class="fab fa-linkedin fa-3x"></i>
-						</a>
-						<a href="https://github.com/CGMcBride" target="_blank" rel="noopener noreferrer">
-							<i class="fab fa-github fa-3x"></i>
-						</a>
-					</div>
+	</div>
+	<div class="container pb-5 mb-5">
+		<div class="row">
+			<div id="mypicture" class="col-sm-12 col-md-4">
+				<img src="assets/images/Portifolio picture.jpg" alt="Conner McBride" width="100%" />
+			</div>
+			<div class="col-sm-12 col-md-8">
+				<iframe src="assets\images\portfolio\ConnerMcBride_Resume.pdf" width="100%" height="500px"></iframe>
+
+				<div class="socialIcons">
+					<a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+						target="_blank" rel="noopener noreferrer">
+						<i class="fab fa-linkedin fa-3x"></i>
+					</a>
+					<a href="https://github.com/CGMcBride" target="_blank" rel="noopener noreferrer">
+						<i class="fab fa-github fa-3x"></i>
+					</a>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div class="container pb-5 mb-5">
+		<div class="row">
+			<div class="col-12">&nbsp;&#160;</div>
+		</div>
+	</div>
+
 	<!-- my first time adding a copy right I always seen them on websites so i wanted my own to feel more offical! -->
-	<footer>
+	<footer class="p-3 bg-dark fixed-bottom">
 		<div>
-			<p class="text-center">2020 &copy; Conner McBride</p>
+			<h6 class="immediateContact text-light text-center"><strong>Immediate Contact Info:
+				</strong><span>Call:</span> <a href="tel:+15127848589">
+					512-784-8589
+				</a> <span>Email:</span> <a href="mailto:connermcbride@ymail.com">connermcbride@ymail.com</a></h6>
+			<p class="text-center text-light">2020 &copy; Conner McBride</p>
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
